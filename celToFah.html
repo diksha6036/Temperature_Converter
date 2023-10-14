@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./hot.png">
+   <style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:rgba(0,0,0,0.7)url("./temperature-converter.webp");  
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+}
+.bodydiv{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 40vw;
+    height: 40vh;
+    background-color: transparent;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Young Serif', cursive;
+}
+.insideCont{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#cel{
+    height: 40px;
+    font-size:20px ;
+    width: 200px;
+    text-align: center;
+}
+.celpart{
+    display: flex;
+    flex-direction: column;
+
+}
+h1{
+    color: white;
+    margin-top: 2rem;
+margin-left: 3rem;
+}
+#farh{
+    height: 40px;
+    font-size:20px ;
+    width: 200px;
+    margin-left: 3rem;
+    text-align: center;
+}
+.farhpart{
+    display: flex;
+    flex-direction: column;
+}
+.ml{
+    margin-left: 4rem;
+}
+.midh{
+    margin-top: -5rem;
+}
+   </style>
+    <link rel="icon" type="image/x-icon" href="./hot.png">
+
+</head>
+<body>
+     <div class="bodydiv"> 
+    <div class="container">
+
+        <div class="insideCont">
+        <div class="celpart">
+        <input type="number" id="cel" name="cel">
+        <h1>Celsius</h1>
+    </div>
+    <h1 class="midh">=</h1>
+    <div class="farhpart">
+        <input type="number" id="farh" name="farh">
+        <h1 class="ml">Fahrenheit</h1>
+    </div>
+</div>
+  
+    </div>
+</div>
+
+    
+    <script>
+        // const value=()=>{
+        //     var value1=document.getElementById('cel');
+        //     var value2=document.getElementById('farh');
+        //     var ans=value1*(9/5)+32;
+        //     value2.value=ans;
+        // }
+        const value1=document.getElementById('cel');
+        const value2=document.getElementById('farh');
+        value1.addEventListener("input", function() {
+            var ans=value1.value*(9/5)+32;
+            value2.value = ans;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:rgba(0,0,0,0.7)url("./temperature-converter.webp");  
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+}
+.bodydiv{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 40vw;
+    height: 80vh;
+    background-color: transparent;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upbtn{
+    margin-top: 2rem;
+}
+.downbtn{
+    margin-bottom: 2rem;
+}
+
+.btns{
+    height: 50px;
+    width: 260px;
+    font-size: 20px;
+    font-family: 'Young Serif', cursive;
+    border-radius: 6px;
+    border: none;
+    color:white
+}
+.green{
+    background-color:rgb(17, 156, 17);
+}
+.blue{
+    background-color:rgb(58, 58, 192);
+}
+
+.red{
+    background-color: rgb(208, 65, 65);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
